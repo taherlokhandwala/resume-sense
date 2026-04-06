@@ -11,7 +11,7 @@ async function loadPdfJs(): Promise<any> {
   if (pdfjsLib) return pdfjsLib;
   if (loadPromise) return loadPromise;
 
-  // @ts-expect-error - pdfjs-dist/build/pdf.mjs is not a module
+  // @ts-expect-error
   loadPromise = import("pdfjs-dist/build/pdf.mjs").then((lib) => {
     // Set the worker source to use local file
     lib.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
@@ -73,6 +73,7 @@ export async function convertPdfToImage(
       ); // Set quality to maximum (1.0)
     });
   } catch (err) {
+    console.error("Error converting PDF to image:", err);
     return {
       imageUrl: "",
       file: null,
