@@ -1,87 +1,61 @@
-# Welcome to React Router!
+# Resume Sense
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Resume Sense is a smart AI-powered resume analyzer designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS). By providing instant feedback, ATS scores, and improvement tips, it helps you get closer to your dream job.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## 🚀 What it does
 
-## Features
+- **Smart PDF Upload**: Easily drag and drop your PDF resume for analysis.
+- **AI-Powered Feedback**: Uses Puter.js AI capabilities to analyze your resume against specific job descriptions.
+- **ATS Scoring**: Get a realistic assessment of how your resume performs for a given job title.
+- **Image Conversion**: Automatically converts PDF resumes to high-quality images for better AI processing.
+- **Data Privacy**: Leverages Puter.js for secure file storage and key-value data management.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## 🛠 Tech Stack
 
-## Getting Started
+- **Framework**: [React Router v7](https://reactrouter.com/)
+- **AI & Backend Services**: [Puter.js](https://puter.com/) (Authentication, AI Chat, File System, KV Storage)
+- **PDF Processing**: [PDF.js](https://mozilla.github.io/pdf.js/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **State Management**: [Zustand](https://zustand-demo.pmnd.rs/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Package Manager**: [npm](https://www.npmjs.com/)
+## 💻 Development Setup
 
-### Installation
+### Prerequisites
 
-Install the dependencies:
+- [Node.js](https://nodejs.org/) (Latest LTS recommended)
+- [npm](https://www.npmjs.com/)
 
-```bash
-npm install
-```
+### Getting Started
 
-### Development
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/taherlokhandwala/resume-sense.git
+    cd resume-sense
+    ```
 
-Start the development server with HMR:
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-```bash
-npm run dev
-```
+3.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+    The application will be available at `http://localhost:5173`.
 
-Your application will be available at `http://localhost:5173`.
+4.  **Build for production**:
+    ```bash
+    npm run build
+    ```
 
-## Building for Production
+## 🤝 Contribution Guidelines
 
-Create a production build:
+Contributions to Resume Sense are welcomed! To contribute:
 
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+1.  **Fork** the repository.
+2.  **Create a new branch** for your feature or bug fix (`git checkout -b feature/your-feature-name`).
+3.  **Commit your changes** with clear, descriptive messages.
+4.  **Push to your branch** (`git push origin feature/your-feature-name`).
+5.  **Open a Pull Request** and describe your changes.
